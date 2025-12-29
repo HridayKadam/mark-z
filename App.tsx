@@ -248,6 +248,12 @@ const App: React.FC = () => {
               linkedin="https://www.linkedin.com/in/hridaykadam/" 
               x="https://x.com/hridaykadam" 
             />
+              <div className="border-t border-stone-300 border-opacity-30 w-full">
+            <PersonnelRow 
+              name="Rishab Goyal" 
+              linkedin="https://www.linkedin.com/in/c2rishab-goyal/" 
+              x="https://x.com/hridaykadam" 
+            />
             <PersonnelRow 
               name="Aryan Kumar" 
               linkedin="https://www.linkedin.com/in/aryankumarr16/" 
