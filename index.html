@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Z</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Warmer paper tones for better contrast and feel */
+            --paper-color: #f1ede4; 
+            --desk-color: #dcd7ca;
+            --ink-color: #1a1a1a;
+            --secondary-ink: #5a554a;
+        }
+        body {
+            background-color: var(--desk-color);
+            color: var(--ink-color);
+            font-family: 'EB Garamond', serif;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'EB Garamond', serif;
+        }
+        .paper-sheet {
+            background-color: var(--paper-color);
+            /* Multiple textures for a richer paper feel */
+            background-image: 
+                url("https://www.transparenttextures.com/patterns/natural-paper.png"),
+                radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.02) 100%);
+            box-shadow: 0 40px 100px rgba(0,0,0,0.1), 0 1px 4px rgba(0,0,0,0.05);
+            position: relative;
+            min-height: 100vh;
+        }
+        ::selection {
+            background-color: #d3cdbc;
+            color: var(--ink-color);
+        }
+        a {
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .marginalia {
+            font-size: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--secondary-ink); /* Darkened for visibility */
+        }
+        .dropcap::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 1;
+            padding-right: 0.75rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+        /* Mobile adjustment */
+        @media (max-width: 640px) {
+            .paper-sheet {
+                padding: 2rem 1rem !important;
+            }
+            .dropcap::first-letter {
+                font-size: 3.5rem;
+            }
+        }
+        /* Prevent horizontal overflow */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        /* Custom scrollbar matching paper theme */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--desk-color); }
+        ::-webkit-scrollbar-thumb { background: #b8b1a2; border-radius: 0; }
+        ::-webkit-scrollbar-thumb:hover { background: #9e9686; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
