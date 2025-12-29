@@ -9,7 +9,7 @@ const IconInstagram = () => (
 
 const IconX = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M3 3h3l4.5 5.9L15.5 3H21l-7.2 9.4L21 21h-3l-5.2-6.7L7.3 21H3l7.3-9.5L3 3z" />
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
   </svg>
 );
 
@@ -130,11 +130,6 @@ const App: React.FC = () => {
         </div>
         
         <div className="flex flex-col items-center sm:items-start">
-          <img 
-            src="/markzlogo.jpeg" 
-            alt="Mark Z logo" 
-            className="w-20 sm:w-24 md:w-28 h-auto mb-4 sm:mb-6 object-contain"
-          />
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif font-bold mb-4 sm:mb-6 tracking-tighter uppercase italic leading-none text-center sm:text-left">
             Mark Z
           </h1>
